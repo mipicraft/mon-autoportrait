@@ -50,7 +50,7 @@ const PAGES = [
   {
     title: "Pour finir",
     text: "Merci d'avoir feuilleté mon carnet. Cet autoportrait n'est jamais tout à fait terminé.",
-    image: "images/image2.jpg",
+    image: null,
     video: "videos/video1.MP4",
     music: "audio/musique2.wav"
   }
