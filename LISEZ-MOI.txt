@@ -1,0 +1,45 @@
+MON LIVRE INTERACTIF 3D
+=======================
+
+INSTALLATION
+1. Décompressez le ZIP.
+2. Double-cliquez sur index.html : le livre s'ouvre dans votre navigateur (Chrome, Firefox, Edge, Safari).
+   Aucune installation, aucun serveur, aucune connexion internet nécessaires.
+
+UTILISATION
+- Cliquez sur le livre fermé pour l'ouvrir (la couverture pivote, puis un petit feuilletage s'effectue).
+- Boutons ‹ et › (ou flèches du clavier) : page précédente / suivante.
+- « Fermer le livre » : le livre se referme complètement.
+- En haut à droite : bouton « Son » (activer/couper) et curseur de volume.
+  Les navigateurs interdisent la musique avant un clic : elle démarre donc quand vous ouvrez le livre.
+- Une seule musique joue à la fois : la musique de la double-page si elle existe, sinon l'ambiance générale.
+- Conseil : utilisez le livre en mode paysage (ordinateur, tablette, ou téléphone tourné).
+
+MODIFIER LE CONTENU (tout se passe dans le fichier contenu.js, ouvrez-le avec le Bloc-notes)
+1. BOOK : titre, sous-titre, auteur, image de couverture, musique d'ambiance.
+2. PAGES : une double-page par bloc { ... }
+     title  : titre (page de gauche)
+     text   : texte (une ligne = un paragraphe, séparez avec \n)
+     image  : "images/mon-image.jpg"   (ou null)
+     video  : "videos/ma-video.mp4"    (ou null — si une vidéo est indiquée, elle remplace l'image)
+     music  : "audio/ma-musique.mp3"   (ou null = pas de musique de page)
+   Pour AJOUTER une page : copiez un bloc complet (de { à },) et collez-le à la suite.
+   Pour SUPPRIMER une page : effacez le bloc entier. Le numéro « Page x / y » s'adapte tout seul.
+   Attention aux virgules entre les blocs et aux guillemets "..." autour des textes.
+
+REMPLACER LES IMAGES, VIDÉOS, MUSIQUES
+- Copiez votre fichier dans le dossier images/, videos/ ou audio/.
+- Écrivez son nom exact dans contenu.js (majuscules, accents et extension comptent).
+  Astuce : évitez les espaces et accents dans les noms de fichiers.
+- Formats conseillés : images .jpg/.png ; vidéos .mp4 ; musiques .mp3 (le .wav fonctionne aussi).
+- Les images et vidéos ne sont jamais déformées (elles s'adaptent à la page).
+- Si un fichier est introuvable, la page affiche un message discret à la place.
+- Les fichiers fournis (croquis, petites musiques) sont des exemples : remplacez-les.
+
+FICHIERS
+index.html (structure) · style.css (apparence) · script.js (animations) · contenu.js (VOTRE contenu)
+
+PERSONNALISER
+- Couleur de la couverture : style.css, variable --leather en haut du fichier.
+- Angle du livre fermé : style.css, « #tilt.closed » (rotateY(26deg) ; 0deg = vu de face).
+- Vitesse : script.js, durées dans open(), step() et closeBook() (en secondes).

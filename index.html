@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Autoportrait – livre interactif</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stage">
+  <div id="shadow" class="closed"></div>
+  <div id="tilt" class="closed"><div id="book" class="closed"></div></div>
+</div>
+<div id="ui" class="hidden">
+  <button id="prev" aria-label="Page précédente">‹</button>
+  <span id="ind"></span>
+  <button id="next" aria-label="Page suivante">›</button>
+  <button id="close">Fermer le livre</button>
+</div>
+<div id="snd"><button id="mute" aria-label="Activer ou couper le son">♪ Son</button><input id="vol" type="range" min="0" max="1" step=".05" value=".6" aria-label="Volume"></div>
+<script src="contenu.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
