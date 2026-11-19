@@ -33,7 +33,8 @@
   function mediaPage(p, i) {
     const d = el('div', 'pg R'), f = el('div', 'fr'); let m;
     if (p.video) {
-      m = el('video'); m.src = p.video; m.controls = true; m.playsInline = true; m.preload = 'metadata';
+      m = el('video'); m.src = p.video; m.controls = false; m.playsInline = true; m.preload = 'auto'; m.disablePictureInPicture = true;
+      m.muted = true; m.loop = true; m.setAttribute('muted', '');   // sans le son, en boucle
       m.onerror = () => m.replaceWith(ph('Vidéo introuvable : ' + p.video));
     } else if (p.image) {
       m = el('img'); m.src = p.image; m.alt = p.title || ''; m.draggable = false;
@@ -100,6 +101,8 @@
     if (m) play(pa, m); else if (B.ambient) play(amb, B.ambient);
   }
   const pauseVideos = () => document.querySelectorAll('video').forEach(v => v.pause());
+  // lance la vidéo de la double-page affichée (muette, donc autorisée par les navigateurs)
+  const playVideo = () => { const v = s >= 0 && leaves[s + 1] && leaves[s + 1].querySelector('.front video'); if (v) { v.currentTime = 0; v.play().catch(() => {}); } };
 
   /* ---------- actions ---------- */
   async function open() {
@@ -110,19 +113,19 @@
       await go(Math.min(N - 1, 5), .55, .14);
       await go(0, .6, .12);
     }
-    setMusic(); lock = false; upd();
+    setMusic(); playVideo(); lock = false; upd();
   }
   async function step(d) {
     if (lock || s < 0 || s + d < 0 || s + d > N - 1) return;
     lock = true; upd(); pauseVideos();
     await go(s + d, 1.1, 0);
-    setMusic(); lock = false; upd();
+    setMusic(); playVideo(); lock = false; upd();
   }
   async function closeBook() {
     if (lock || s < 0) return;
     lock = true; upd(); pauseVideos();
     await go(-1, 1.5, Math.min(.1, 1 / Math.max(1, s)));
-    setMusic(); lock = false; upd();
+    setMusic(); playVideo(); lock = false; upd();
   }
 
   book.addEventListener('click', () => { if (s < 0) open(); });
