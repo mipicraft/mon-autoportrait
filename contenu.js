@@ -14,7 +14,7 @@ const BOOK = {
 const PAGES = [
   {
     title: "Qui suis-je ?",
-    text: "Voici une présentation de moi : mon prénom, mon âge, ce qui me définit en quelques mots.\nÉcris ici ce que tu veux montrer de toi.",
+    text: "Minecraft est un jeu génial où tu peux libérer ta créativité et faire toutes sortes de choses, plus folles les unes que les autres !\n\nPar exemple, moi, j'adore faire de la redstone et créer des systèmes toujours plus complexes. Une fois, j'ai même fait une sorte de calculatrice capable d'additionner directement dans Minecraft !\n\nSi vous n'y avez jamais joué, je vous le conseille !\n\nAnimation réalisée par moi sur Blender.",
     image: "images/image1.jpg",
     video: null,
     music: "audio/musique1.wav"
