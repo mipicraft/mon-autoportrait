@@ -3,7 +3,7 @@
 const BOOK = {
   title: "Autoportrait",
   subtitle: "Carnet d'un esprit curieux",
-  author: "Prénom Nom",
+  author: "Van acker Nathan",
   coverImage: "images/couverture.jpg",   // null = pas d'image
   ambient: "audio/ambiance.wav"          // musique d'ambiance, null = aucune
 };
