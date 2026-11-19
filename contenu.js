@@ -14,14 +14,14 @@ const BOOK = {
 const PAGES = [
   {
     title: "Qui suis-je ?",
-    text: "Minecraft est un jeu génial où tu peux libérer ta créativité et faire toutes sortes de choses, plus folles les unes que les autres !\n\nPar exemple, moi, j'adore faire de la redstone et créer des systèmes toujours plus complexes. Une fois, j'ai même fait une sorte de calculatrice capable d'additionner directement dans Minecraft !\n\nSi vous n'y avez jamais joué, je vous le conseille !\n\nAnimation réalisée par moi sur Blender.",
+    text: "rien",
     image: "images/image1.jpg",
     video: null,
     music: "audio/musique1.wav"
   },
   {
     title: "Minecraft",
-    text: "Voici ce que j'aime faire : dessiner, écouter de la musique, jouer, créer.\nChaque passion raconte un morceau de ma personnalité.",
+    text: "Minecraft est un jeu génial où tu peux libérer ta créativité et faire toutes sortes de choses, plus folles les unes que les autres !\n\nPar exemple, moi, j'adore faire de la redstone et créer des systèmes toujours plus complexes. Une fois, j'ai même fait une sorte de calculatrice capable d'additionner directement dans Minecraft !\n\nSi vous n'y avez jamais joué, je vous le conseille !\n\nAnimation réalisée par moi sur Blender.",
     image: null,
     video: "videos/video2.mp4",                         // exemple vidéo : video: "videos/video1.mp4", image: null
     music: "audio/musique2.wav"
