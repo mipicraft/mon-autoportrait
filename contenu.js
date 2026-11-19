@@ -23,7 +23,7 @@ const PAGES = [
     title: "Minecraft",
     text: "Voici ce que j'aime faire : dessiner, écouter de la musique, jouer, créer.\nChaque passion raconte un morceau de ma personnalité.",
     image: null,
-    video: "videos/minecraft-cube.mp4",                         // exemple vidéo : video: "videos/video1.mp4", image: null
+    video: "videos/video2.mp4",                         // exemple vidéo : video: "videos/video1.mp4", image: null
     music: "audio/musique2.wav"
   },
   {
