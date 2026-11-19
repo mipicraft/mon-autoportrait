@@ -2,7 +2,7 @@
 
 const BOOK = {
   title: "Autoportrait",
-  subtitle: "Carnet d'un esprit curieux",
+  subtitle: "Journal de moi même.",
   author: "Van acker Nathan",
   coverImage: "images/couverture.jpg",   // null = pas d'image
   ambient: "audio/ambiance.wav"          // musique d'ambiance, null = aucune
@@ -15,7 +15,7 @@ const PAGES = [
   {
     title: "Qui suis-je ?",
     text: "rien",
-    image: "images/image1.jpg",
+    image: null,
     video: null,
     music: "audio/musique1.wav"
   },
@@ -27,29 +27,29 @@ const PAGES = [
     music: "audio/musique2.mp3"
   },
   {
-    title: "Mon univers",
-    text: "Voici mon univers : les lieux, les objets et les couleurs qui m'entourent.\nCette page n'a pas de musique : l'ambiance générale reprend.",
-    image: "images/couverture.jpg",
+    title: "Angel engine",
+    text: "rien page 3",
+    image: null,
     video: null,
     music: "audio/musique3.wav"
   },
   {
-    title: "Mes rêves",
-    text: "Ici, je parle de ce que j'aimerais devenir et des choses que je veux accomplir.",
+    title: "page 4",
+    text: "rien page 4",
     image: null,                         // pas de média : un emplacement discret s'affiche
     video: null,
     music: "audio/musique1.wav"
   },
   {
-    title: "Mes qualités et mes défauts",
-    text: "Un autoportrait, c'est aussi savoir se regarder honnêtement.\nListe ici ce qui te rend fort, et ce que tu travailles encore.",
+    title: "page 5",
+    text: "rien page 5",
     image: "images/image1.jpg",
     video: null,
     music: null
   },
   {
     title: "Pour finir",
-    text: "Merci d'avoir feuilleté mon carnet. Cet autoportrait n'est jamais tout à fait terminé.",
+    text: "rien fin",
     image: null,
     video: "videos/video1.mp4",
     music: "audio/musique2.wav"
