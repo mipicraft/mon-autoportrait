@@ -31,7 +31,7 @@ const PAGES = [
     text: "Voici mon univers : les lieux, les objets et les couleurs qui m'entourent.\nCette page n'a pas de musique : l'ambiance générale reprend.",
     image: "images/couverture.jpg",
     video: null,
-    music: null
+    music: "audio/musique3.mp3"
   },
   {
     title: "Mes rêves",
