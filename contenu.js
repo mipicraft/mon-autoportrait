@@ -20,10 +20,10 @@ const PAGES = [
     music: "audio/musique1.wav"
   },
   {
-    title: "Mes passions",
+    title: "Minecraft",
     text: "Voici ce que j'aime faire : dessiner, écouter de la musique, jouer, créer.\nChaque passion raconte un morceau de ma personnalité.",
-    image: "images/image2.jpg",
-    video: null,                         // exemple vidéo : video: "videos/video1.mp4", image: null
+    image: null,
+    video: "videos/minecraft-cube.mp4",                         // exemple vidéo : video: "videos/video1.mp4", image: null
     music: "audio/musique2.wav"
   },
   {
