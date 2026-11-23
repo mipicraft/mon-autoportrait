@@ -24,7 +24,7 @@ const PAGES = [
     text: "Minecraft est un jeu génial où tu peux libérer ta créativité et faire toutes sortes de choses, plus folles les unes que les autres !\n\nPar exemple, moi, j'adore faire de la redstone et créer des systèmes toujours plus complexes. Une fois, j'ai même fait une sorte de calculatrice capable d'additionner directement dans Minecraft !\n\nSi vous n'y avez jamais joué, je vous le conseille !\n\nAnimation réalisée par moi sur Blender.",
     image: null,
     video: "videos/video2.mp4",                         // exemple vidéo : video: "videos/video1.mp4", image: null
-    music: "audio/musique2.mp3"
+    music: "audio/musique2.wav"
   },
   {
     title: "Angel engine",
