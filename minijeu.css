@@ -1,0 +1,49 @@
+/* Mini-jeu « recopie la page » */
+.pg .mj-btn{position:absolute;top:3.2%;right:12.5%;z-index:5;font:italic .72em Palatino,Georgia,serif;letter-spacing:.05em;
+  padding:.2em .7em;background:rgba(90,60,30,.08);color:#5a3a1e;border:1px dashed rgba(90,60,30,.55);border-radius:3px;cursor:pointer}
+.pg .mj-btn:hover{background:rgba(90,60,30,.22)}
+
+.mj-ov{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;
+  font-family:Palatino,"Palatino Linotype","Book Antiqua",Georgia,serif;user-select:none;-webkit-user-select:none}
+.mj-ov[hidden]{display:none}
+button.mj-b{font:inherit;font-size:15px;padding:8px 18px;background:#3a2415;color:#f0dfb8;border:1px solid #1a1109;border-radius:3px;cursor:pointer}
+button.mj-b:hover{background:#573620}
+.mj-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+
+/* fenêtre d'explication */
+#mj-intro{--gh:clamp(70px,20vh,168px);background:rgba(8,5,3,.72);padding:calc(var(--gh) + 12px) 14px 14px}
+.mj-win{position:relative;width:min(560px,100%);background:var(--noise),#f4ebd8;color:#3a2a1c;border:4px solid #1a1109;border-radius:4px;box-shadow:0 14px 44px rgba(0,0,0,.65)}
+.mj-ghost{position:absolute;left:50%;bottom:calc(100% + 1px);transform:translateX(-50%);height:var(--gh);image-rendering:pixelated;pointer-events:none}
+.mj-body{padding:20px 26px 22px;max-height:calc(100vh - var(--gh) - 60px);overflow:auto;line-height:1.5}
+.mj-body h3{font:400 1.5em "Segoe Print","Bradley Hand","Comic Sans MS",cursive;margin-bottom:.5em}
+.mj-body ul{padding-left:1.2em}.mj-body li{margin:.35em 0}
+
+/* jeu : bordures noires + feuille */
+#mj-game{background:rgba(10,6,3,.92);z-index:110}
+.mj-band{position:absolute;background:#000;z-index:2}
+.mj-band.t,.mj-band.b{left:0;right:0;height:var(--B)}
+.mj-band.l,.mj-band.r{top:0;bottom:0;width:var(--B)}
+.mj-band.t{top:0}.mj-band.b{bottom:0}.mj-band.l{left:0}.mj-band.r{right:0}
+.mj-m{position:absolute;image-rendering:pixelated;cursor:pointer;-webkit-user-drag:none;touch-action:manipulation}
+.mj-sheet{position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;flex-direction:column;
+  width:min(820px,calc(100vw - 2 * var(--B) - 24px));max-height:calc(100vh - 2 * var(--B) - 24px);
+  padding:18px 22px;background:var(--noise),#f4ebd8;color:#3a2a1c;border-radius:3px;box-shadow:0 8px 30px rgba(0,0,0,.6)}
+.mj-sheet h3{font:400 1.35em "Segoe Print","Bradley Hand","Comic Sans MS",cursive;padding-bottom:.3em;margin-bottom:.6em;border-bottom:1px dashed rgba(90,60,30,.4)}
+#mj-text{flex:1;min-height:0;overflow:auto;font-size:clamp(14px,2.6vmin,24px);line-height:1.7;scrollbar-width:thin}
+#mj-text span{color:rgba(70,55,40,.3)}
+#mj-text span.ok{color:#2a1d14}
+#mj-text span.bad{color:#c0161a;background:rgba(200,20,20,.14)}
+#mj-text span.cur{box-shadow:inset 0 -2px 0 #2a1d14;animation:cu 1s steps(1) infinite}
+@keyframes cu{50%{box-shadow:none}}
+#mj-stat{margin-top:.6em;font-size:.8em;font-style:italic;opacity:.7;display:flex;justify-content:space-between;align-items:center}
+#mj-quit{font-size:12px;padding:3px 10px}
+#mj-in{position:absolute;left:0;top:0;width:1px;height:1px;opacity:0;border:0;padding:0}
+
+/* fin de partie */
+#mj-end{z-index:130;flex-direction:column;background:rgba(0,0,0,.88);color:#eee;text-align:center;padding:14px}
+.mj-big{max-height:62vh;max-width:92vw;image-rendering:pixelated;animation:jump .4s cubic-bezier(.2,1.6,.4,1) both}
+@keyframes jump{from{transform:scale(.12)}to{transform:scale(1)}}
+#mj-end h2{font:400 clamp(30px,8vmin,64px) "Segoe Print","Comic Sans MS",cursive;margin-top:10px}
+#mj-end.lose h2{color:#d4151b;letter-spacing:.08em}
+#mj-end.win h2{color:#e0b85a}
+#mj-end.win .mj-big{display:none}
