@@ -31,7 +31,7 @@ const PAGES = [
     text: 
 "Angel Engine est une série d'horreur analogique créée par Nicolai Leimer, connu sur TikTok sous le pseudo @theunearthlyhub. La série a commencé en 2025 et raconte une histoire se déroulant dans un futur où l'humanité est en crise. Un ange nommé Uriel descend sur Terre pour aider les humains, mais il finit capturé et utilisé dans une machine appelée l'Angel Engine, afin d'exploiter son énergie.\n\nLa série mélange science-fiction, religion et horreur, avec une ambiance très particulière qui la rend mystérieuse et inquiétante. Elle a rapidement gagné en popularité sur TikTok et d'autres plateformes. Les visuels ont notamment été réalisés avec l'aide de l'intelligence artificielle au début du projet.\n\nAngel Engine est devenue une série très connue dans le domaine de l'analog horror, notamment grâce à son histoire, ses mystères et ses nombreux détails à découvrir.\n\nMon personnage préféré est Barachiel, un ange créé par des scientifiques à partir d'ADN humain et angélique. Il a été rejeté car, étant un hybride, il ne produit pas d'énergie comme un ange normal.\n\nJe me suis même amusé à le dessiner pour mieux visualiser à quoi il ressemble. Tu peux aussi le voir et tester mon mini-jeu en haut de cette page !"
 ,
-    image: "image2.png",
+    image: "images/image2.png",
     video: null,
     music: "audio/musique3.wav"
   },
