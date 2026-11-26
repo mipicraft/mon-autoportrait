@@ -43,11 +43,11 @@ const PAGES = [
     music: "audio/musique1.wav"
   },
   {
-    title: "page 5",
-    text: "rien page 5",
+    title: "Le code !",
+    text: "Ma partie préférée ! Le code, c'est quelque chose que j'adore. Je veux d'ailleurs en faire mon métier plus tard. Dans le code, il existe plusieurs langages qui ne sont pas tous pareils et qui ne servent pas à la même chose. Par exemple, moi, je code en Python et en Luau. Ce sont des langages de programmation plutôt simples, mais pour faire des sites comme celui sur lequel se trouve mon livre, il me faut du JavaScript et du HTML. Et holala, qu'est-ce que c'est difficile ! Donc, ce que j'ai fait, c'est que j'ai créé le site en Python directement sur mon ordinateur, puis j'ai tout envoyé à une IA appelée « Claude AI » pour qu'elle me traduise tout dans les bons langages (un peu comme Google Traduction, en gros). Le plus dur sur ce site, c'était l'animation du livre en 3D. Je me suis fait mal au cerveau en la faisant !",
     image: "images/image1.jpg",
     video: null,
-    music: null
+    music: "audio/musique4.mp3"
   },
   {
     title: "Pour finir",
