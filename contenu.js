@@ -14,8 +14,8 @@ const BOOK = {
 const PAGES = [
   {
     title: "Qui suis-je ?",
-    text: "rien",
-    image: null,
+    text: "Moi c'est Nathan Van acker j'ai 14 and quand j'écris sa dans ce livre je vais vous parler de choses que j'adore !",
+    image: "images/image3.png",
     video: null,
     music: "audio/musique1.wav"
   },
